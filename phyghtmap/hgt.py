@@ -381,7 +381,7 @@ class ContourObject(object):
 
 		if self.rdpEpsilon == 0.0:
 			return path
-		if path.shape[0] <= 2:
+		if numpy.array(path).shape[0] <= 2:
 			return path
 		S = path[0]
 		E = path[-1]
